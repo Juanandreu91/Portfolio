@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy Juan Andreu</h1>
+            <p>Desarrollador web en formación, construyendo mi camino en el mundo del desarrollo frontend.</p>
+            <p>Apasionado por la tecnología, el diseño y la programación.</p>
+            <a href="#proyectos" class="btn-hero">Ver mis proyectos</a>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy estudiante de DAW con conocimientos en HTML, CSS y JavaScript. Me encanta crear sitios web y poco a poco estoy aprendiendo a hacerlos interactivos y visualmente atractivos.</p>
+        <p>Busco crecer como desarrolladora, colaborar en proyectos reales y seguir aprendiendo tecnologías como React, Node.js y bases de datos.</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div id="lista-proyectos">
+            <!-- Aquí irán los proyectos -->
+            <div class="proyecto">
+                <h3>Lista de tareas</h3>
+                <p>Aplicación web sencilla en JavaScript para agregar, eliminar y marcar tareas como completadas.</p>
+                <a href="todo-list/index.html" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="form-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensaje-envio"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 Juan Andreu Sampol Llull. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

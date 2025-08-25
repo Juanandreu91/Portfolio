@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80'); 
+    background-size: cover; /* Escala para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No se repite */
+    background-attachment: fixed; /* Efecto parallax */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Mínimo alto igual al alto de la ventana */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+    /* Capa overlay */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* negro con 50% de opacidad */
+        z-index: -1; /* detrás de todo */
+    }
+
+/* Header y navegación */
+header {
+    background-color: #343a40;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+            nav ul li a:hover {
+                color: #00bcd4;
+            }
+
+/* Secciones */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Proyectos */
+.proyecto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+    .proyecto a {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: #00bcd4;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .proyecto a:hover {
+            background-color: #0097a7;
+        }
+
+/* Formulario */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #00bcd4;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    form button:hover {
+        background-color: #0097a7;
+    }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+    color: #555;
+}
+/* HERO (Portada de bienvenida) */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* capa oscura encima del fondo */
+    backdrop-filter: brightness(25%);
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* fondo semi-transparente detrás del texto */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-hero:hover {
+        background-color: #0097a7;
+    }
+.proyecto a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .proyecto a:hover {
+        background-color: #0097a7;
+        transform: scale(1.05);
+    }
