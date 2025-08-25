@@ -10,7 +10,7 @@ Este es mi portfolio personal como estudiante de Desarrollo de Aplicaciones Web 
 ## 🌐 Ver en línea
 
 Puedes ver la versión en vivo del portfolio aquí:  
-👉 [https://tuusuario.github.io/portfolio](https://tuusuario.github.io/portfolio)
+👉 https://github.com/Juanandreu91/Portfolio
 
 ## 🛠 Tecnologías usadas
 
